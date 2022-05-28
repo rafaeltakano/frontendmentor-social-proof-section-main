@@ -178,4 +178,17 @@ template {
   display: none;
 }
 
+._app {
+  background-color: lightblue;
+  background-image: url("../../images/bg-pattern-top-mobile.svg"), url("../../images/bg-pattern-bottom-mobile.svg");
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+@media (min-width: 376px) {
+  ._app {
+    background-image: url("../../images/bg-pattern-top-desktop.svg"), url("../../images/bg-pattern-bottom-desktop.svg");
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
