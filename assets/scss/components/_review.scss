@@ -1,0 +1,11 @@
+.review {
+  background-color: var(--magenta-100);
+  border-radius: 0.5rem;
+  padding: 1rem;
+
+  &__source {
+    h4 {
+      margin: 0.5rem 0 0;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+$--pattern-top-mobile: url('../../../images/bg-pattern-top-mobile.svg');
+$--pattern-bottom-mobile: url('../../../images/bg-pattern-bottom-mobile.svg');
+$--pattern-top-desktop: url('../../../images/bg-pattern-top-desktop.svg');
+$--pattern-bottom-desktop: url('../../../images/bg-pattern-bottom-desktop.svg');
+
+._app {
+  background-color: var(--white);
+  background-image: $--pattern-top-mobile, $--pattern-bottom-mobile;
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  @media (min-width: 376px) {
+    background-image: $--pattern-top-desktop, $--pattern-bottom-desktop;
+  }
+}

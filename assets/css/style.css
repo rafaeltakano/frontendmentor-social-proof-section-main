@@ -178,17 +178,79 @@ template {
   display: none;
 }
 
+*,
+*::after,
+*::before {
+  font-family: var(--font-family);
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+:root {
+  --magenta-300: hsl(300, 43%, 22%);
+  --magenta-200: hsl(303, 10%, 53%);
+  --magenta-100: hsl(300, 24%, 96%);
+  --pink-100: hsl(333, 80%, 67%);
+  --white: hsl(0, 0%, 100%);
+  --font-family: "League Spartan", sans-serif;
+}
+
+.accent {
+  color: var(--magenta-300);
+}
+
+.container {
+  margin-inline: auto;
+  max-width: 85%;
+}
+
 ._app {
-  background-color: lightblue;
-  background-image: url("../../images/bg-pattern-top-mobile.svg"), url("../../images/bg-pattern-bottom-mobile.svg");
+  background-color: var(--white);
+  background-image: url("../../../images/bg-pattern-top-mobile.svg"), url("../../../images/bg-pattern-bottom-mobile.svg");
   background-position: left top, right bottom;
   background-repeat: no-repeat;
   min-height: 100vh;
 }
 @media (min-width: 376px) {
   ._app {
-    background-image: url("../../images/bg-pattern-top-desktop.svg"), url("../../images/bg-pattern-bottom-desktop.svg");
+    background-image: url("../../../images/bg-pattern-top-desktop.svg"), url("../../../images/bg-pattern-bottom-desktop.svg");
   }
+}
+
+.header {
+  padding-top: 5rem;
+  text-align: center;
+}
+.header__headline {
+  margin-bottom: 2.5rem;
+}
+.header__headline h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 0.8;
+}
+.header__headline p {
+  color: var(--magenta-200);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.header__ratings {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.review {
+  background-color: var(--magenta-100);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.review__source h4 {
+  margin: 0.5rem 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */
