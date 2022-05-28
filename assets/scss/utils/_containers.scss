@@ -1,0 +1,10 @@
+@use '../variables' as v;
+
+.container {
+  margin-inline: auto;
+  max-width: 85%;
+
+  @media (min-width: v.$breakpoint-desktop) {
+    width: clamp(calc(0.85 * v.$breakpoint-desktop), 70%, 62.5rem);
+  }
+}

@@ -4,7 +4,6 @@ $--pattern-top-desktop: url('../../../images/bg-pattern-top-desktop.svg');
 $--pattern-bottom-desktop: url('../../../images/bg-pattern-bottom-desktop.svg');
 
 ._app {
-  background-color: var(--white);
   background-image: $--pattern-top-mobile, $--pattern-bottom-mobile;
   background-position: left top, right bottom;
   background-repeat: no-repeat;
@@ -12,5 +11,13 @@ $--pattern-bottom-desktop: url('../../../images/bg-pattern-bottom-desktop.svg');
 
   @media (min-width: 376px) {
     background-image: $--pattern-top-desktop, $--pattern-bottom-desktop;
+  }
+
+  @media (prefers-color-scheme: light) {
+    background-color: var(--white);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--dark-500);
   }
 }

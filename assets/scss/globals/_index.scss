@@ -1,8 +1,22 @@
 :root {
-  --magenta-300: hsl(300, 43%, 22%);
-  --magenta-200: hsl(303, 10%, 53%);
   --magenta-100: hsl(300, 24%, 96%);
+  --magenta-200: hsl(303, 10%, 53%);
+  --magenta-300: hsl(300, 43%, 22%);
+
   --pink-100: hsl(333, 80%, 67%);
-  --white: hsl(0, 0%, 100%);
+
+  --white-100: hsl(0, 0%, 100%);
+  --white-200: hsl(0, 0%, 95%);
+  --white-300: hsl(0, 0%, 74%);
+
+  --dark-400: hsl(0, 0%, 23%);
+  --dark-500: hsl(0, 0%, 7%);
+
   --font-family: 'League Spartan', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  font-family: var(--font-family);
 }
