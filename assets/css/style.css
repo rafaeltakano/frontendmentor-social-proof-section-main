@@ -337,7 +337,8 @@ footer a {
   border-radius: 0.5rem;
   padding: 0.75rem;
 }
-.review__source h4 {
+.review__source h2 {
+  font-size: 1rem;
   margin: 0.5rem 0 0;
 }
 @media (min-width: 60.375em) {
@@ -384,8 +385,9 @@ footer a {
   height: 100%;
   width: 100%;
 }
-.testimonial__author__name h4 {
+.testimonial__author__name h2 {
   color: var(--magenta-100);
+  font-size: 1rem;
   margin: 0;
 }
 .testimonial__author__name p {
