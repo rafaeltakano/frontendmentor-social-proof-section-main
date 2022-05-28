@@ -1,11 +1,25 @@
+@use '../variables' as v;
+
 .review {
   background-color: var(--magenta-100);
   border-radius: 0.5rem;
-  padding: 1rem;
+  padding: 0.75rem;
 
   &__source {
     h4 {
       margin: 0.5rem 0 0;
+    }
+  }
+
+  @media (min-width: v.$breakpoint-desktop) {
+    display: flex;
+    width: 80%;
+    align-items: center;
+
+    &__stars {
+      display: flex;
+      gap: 0.25rem;
+      padding-left: 0.75rem;
     }
   }
 }
