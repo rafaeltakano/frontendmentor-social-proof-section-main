@@ -1,3 +1,5 @@
+@use '../variables' as v;
+
 $--pattern-top-mobile: url('../../../images/bg-pattern-top-mobile.svg');
 $--pattern-bottom-mobile: url('../../../images/bg-pattern-bottom-mobile.svg');
 $--pattern-top-desktop: url('../../../images/bg-pattern-top-desktop.svg');
@@ -9,7 +11,7 @@ $--pattern-bottom-desktop: url('../../../images/bg-pattern-bottom-desktop.svg');
   background-repeat: no-repeat;
   min-height: 100vh;
 
-  @media (min-width: 376px) {
+  @media (min-width: v.$breakpoint-mobile) {
     background-image: $--pattern-top-desktop, $--pattern-bottom-desktop;
   }
 

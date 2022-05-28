@@ -1,0 +1,52 @@
+@use '../variables' as v;
+
+.testimonial {
+  background-color: var(--magenta-300);
+  border-radius: 0.5rem;
+  height: fit-content;
+  padding: 2.5rem 2rem 1rem;
+
+  &__author {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    &__img {
+      margin: 0;
+      height: 3rem;
+      width: 3rem;
+
+      img {
+        border-radius: 50%;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    &__name {
+      h4 {
+        color: var(--magenta-100);
+        margin: 0;
+      }
+
+      p {
+        color: var(--pink-100);
+        margin: 0.15rem 0 0;
+      }
+    }
+  }
+
+  &__text {
+    margin-top: 2rem;
+
+    p {
+      color: var(--magenta-100);
+      font-weight: 400;
+      line-height: 1.5;
+    }
+  }
+
+  @media (min-width: v.$breakpoint-desktop) {
+    margin: 2.5rem 0;
+  }
+}

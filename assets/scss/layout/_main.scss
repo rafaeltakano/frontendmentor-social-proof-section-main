@@ -1,0 +1,22 @@
+@use '../variables' as v;
+
+.testimonials {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  gap: 1rem;
+  margin-top: 2.5rem;
+
+  @media (min-width: v.$breakpoint-desktop) {
+    grid-template-columns: repeat(3, 1fr);
+
+    :nth-child(1) {
+      margin-top: 0;
+    }
+
+    :nth-child(3) {
+      margin-top: auto;
+      margin-bottom: 0;
+    }
+  }
+}
